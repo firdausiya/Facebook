@@ -7,10 +7,11 @@
 
 /* Body and general styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: #333;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .container {
@@ -20,19 +21,22 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
+    border-bottom: 4px solid #fff;
+    margin-bottom: 40px;
+    border-radius: 8px;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-size: 1.3em;
 }
 
 /* About Section */
@@ -40,27 +44,35 @@ header p {
     background-color: #fff;
     padding: 50px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-radius: 8px;
 }
 
 .about h2 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-top: 10px;
 }
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #eee;
+    background-color: #fff;
     padding: 50px 0;
     text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
+    color: #ff7e5f;
 }
 
 .grid {
@@ -70,19 +82,27 @@ header p {
 }
 
 .item {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.item:hover {
+    transform: scale(1.05);
 }
 
 .item img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .item p {
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
 }
 
 /* Contact Section */
@@ -90,10 +110,18 @@ header p {
     background-color: #fff;
     padding: 50px 0;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .contact h2 {
     font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
     margin-bottom: 30px;
 }
 
@@ -114,17 +142,24 @@ header p {
     border-radius: 5px;
 }
 
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff7e5f;
+    outline: none;
+}
+
 .contact button {
     padding: 15px 30px;
-    background-color: #333;
+    background-color: #ff7e5f;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-    background-color: #555;
+    background-color: #feb47b;
 }
 
 /* Footer */
@@ -133,4 +168,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
