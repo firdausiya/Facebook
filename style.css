@@ -1,64 +1,40 @@
-/* Responsif untuk menu */
-@media screen and (max-width: 600px) {
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 0;
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    main h2 {
-        font-size: 16px;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-/* Pengaturan warna dan hover untuk elemen */
-nav a:hover {
-    color: #0044cc;
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #87CEEB;
-    margin-top: 30px;
-}
-
-footer p {
-    font-size: 12px;
-}
-
-/* Gaya untuk Form Kontak */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form input[type="submit"] {
-    background-color: #87CEEB;
-    border: none;
+    background-color: #333;
     color: white;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #0044cc;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
